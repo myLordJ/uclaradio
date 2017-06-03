@@ -17,6 +17,7 @@ import DJContainer from './containers/DJContainer.jsx';
 import TriangleCanvas from './components/TriangleCanvas.jsx';
 import FrontPageNavbar from './components/FrontPageNavbar.jsx';
 import StreamBar from './components/StreamBar.jsx';
+import StreamMarquee from './components/StreamMarquee.jsx';
 import ShowInfo from './components/ShowInfo.jsx';
 import WaterFallContent from './components/WaterFallContent.jsx';
 import Error404Page from './components/Error404Page.jsx';
@@ -88,6 +89,7 @@ const FrontpageContent = React.createClass({
             </Grid>
           </div>
         <StreamBar currentShowTitle={showPlaying ? this.props.nowPlaying.title : null} />
+        <StreamMarquee message="This is a test marquee."/>
         </TriangleCanvas>
       </div>
     )
