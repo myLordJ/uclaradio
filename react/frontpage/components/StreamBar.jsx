@@ -10,6 +10,7 @@ import Slider from 'react-slick';
 
 // In house components
 import ChatBox from './ChatBox.jsx';
+import StreamMarquee from './StreamMarquee.jsx';
 
 //mobile?
 import isMobile from './misc/isMobile.js';
@@ -89,6 +90,7 @@ var StreamBar = React.createClass({
               </div>
             </Collapse>
           </div>
+          <StreamMarquee message="This is a test marquee."/>
           <div style={this.state.hasReset ? null : {opacity: "0", height: "0"}}>
             <RecentlyPlayed expanded={this.state.recentExpanded}
               reset={!this.state.hasReset} onReset={this.onReset} />
